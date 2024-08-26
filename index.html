@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador de Texto</title>
+</head>
+<body>
+    <header> 
+        <h1 class="decodificador">Decodificador de Texto</h1>
+    </header>
+    
+    <main>
+        <section class="inclusaoTexto">
+            <textarea id="textoEntrada" class="textoEntrada" cols="50" rows="8" placeholder="Digite seu Texto"></textarea>
+            
+            <div class="informacao">
+                <img src="/Imagens/Alerta.png" alt="Imagem de Alerta">
+                <h6 class="textoAviso">Apenas letras minúsculas e sem acento</h6>
+            </div>
+    
+            <div class="botoes">
+                <button class="botaoCriptografar" onclick="criptografar()">Criptografar</button>
+                <button class="botaoDescriptografar" onclick="descriptografar()">Descriptografar</button>
+            </div>
+    
+        </section>
+    
+        <section class="textoSaidaContainer">
+            <div class="textoSaidaWrapper">
+                <textarea class="textoSaida" id="textoSaida" cols="20" rows="10" readonly></textarea>
+                <div id="mensagemPlaceholder" class="mensagemPlaceholder">
+                    <strong>Nenhuma mensagem encontrada.</strong><br>
+                    <span>Digite um texto que você deseja criptografar ou descriptografar.</span>
+                </div>
+            <button id="botaoCopiar" class="copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+    </main>
+<footer>
+    <p class="desenvoldido">Desenvolvido por Wellington Rafael dos Santos</p>
+    <a href="https://www.instagram.com/_wellington_s/"><img src="/Imagens/instagram2.png" alt=""></a>
+    <a href="https://github.com/Wellington871"><img src="/Imagens/github.png" alt=""></a>
+    <a href="https://www.linkedin.com/in/wellington-rafael-dos-santos/"><img src="/Imagens/linkedin2.png" alt=""></a>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
